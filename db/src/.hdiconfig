@@ -3,9 +3,6 @@
     "csv": {
       "plugin_name": "com.sap.hana.di.tabledata.source"
     },
-    "hdbafllangprocedure": {
-      "plugin_name": "com.sap.hana.di.afllangprocedure"
-    },
     "hdbanalyticprivilege": {
       "plugin_name": "com.sap.hana.di.analyticprivilege"
     },
@@ -29,9 +26,6 @@
     },
     "hdbgraphworkspace": {
       "plugin_name": "com.sap.hana.di.graphworkspace"
-    },
-    "hdbhadoopmrjob": {
-      "plugin_name": "com.sap.hana.di.virtualfunctionpackage.hadoop"
     },
     "hdbindex": {
       "plugin_name": "com.sap.hana.di.index"
