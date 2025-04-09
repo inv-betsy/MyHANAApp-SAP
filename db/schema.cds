@@ -15,4 +15,5 @@ entity Employee {
         phone         : String(20);
         dateOfJoining : Date;
         department    : Association to Department;
+        isActive      : Boolean;
 }

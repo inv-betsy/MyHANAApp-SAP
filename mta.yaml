@@ -57,6 +57,11 @@ modules:
           app-uri: ${default-uri}
 
 resources:
+  - name: MyHANAApp-db
+    type: com.sap.xs.hdi-container
+    parameters:
+      service: hana
+      service-plan: hdi-shared
   - name: MyHANAApp-auth
     type: org.cloudfoundry.managed-service
     parameters:
@@ -66,8 +71,3 @@ resources:
       config:
         xsappname: MyHANAApp-${org}-${space}
         tenant-mode: dedicated
-  - name: MyHANAApp-db
-    type: com.sap.xs.hdi-container
-    parameters:
-      service: hana
-      service-plan: hdi-shared

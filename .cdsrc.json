@@ -1,0 +1,18 @@
+{
+    "requires": {
+        "db": {
+          "binding": {
+            "type": "cf",
+            "apiEndpoint": "https://api.cf.us10-001.hana.ondemand.com",
+            "org": "6c145774trial_6c145774trial",
+            "space": "CAP_Development_trial",
+            "instance": "MyHANNAAppTrial_Dev",
+            "key": "SharedDevKey"
+          },
+          "kind": "hana-cloud",
+          "vcap": {
+            "name": "db"
+          }
+        }
+    }
+  }

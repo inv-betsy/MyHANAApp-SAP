@@ -6,11 +6,14 @@
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
+    "@cap-js/hana": "^1",
     "@sap/cds": "^8",
     "@sap/cds-common-content": "^2.1.0",
-    "@sap/hdi-deploy": "latest",
+    "@sap/hana-client": "^2.23.27",
+    "@sap/hdi-deploy": "^5.4.1",
     "@sap/xssec": "^4",
-    "@cap-js/hana": "^1"
+    "express": "^4",
+    "hdb": "^0.19.12"
   },
   "devDependencies": {
     "@cap-js/cds-types": "^0.9.0",
@@ -18,7 +21,9 @@
     "@sap/cds-dk": "^8"
   },
   "scripts": {
-    "start": "cds-serve"
+    "start": "cds-serve",
+    "watch-interaction_items": "cds watch --open interaction_items/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-department": "cds watch --open department/webapp/index.html?sap-ui-xx-viewCache=false"
   },
   "cds": {
     "requires": {
@@ -30,5 +35,8 @@
     "sql": {
       "native_hana_associations": false
     }
-  }
+  },
+  "sapux": [
+    "app/department"
+  ]
 }
