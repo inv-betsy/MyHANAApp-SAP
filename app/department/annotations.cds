@@ -8,6 +8,11 @@ annotate service.Departments with @(
                 Label : '{i18n>DepartmentName}',
                 Value : name,
             },
+            {
+                $Type : 'UI.DataField',
+                Value : managerFullName,
+                Label : '{i18n>ManagerName}',
+            },
         ],
     },
     UI.Facets : [
@@ -36,7 +41,7 @@ annotate service.Departments with @(
         fn : name,
     },
     UI.HeaderInfo : {
-        TypeName : 'Department Name',
+        TypeName : '{i18n>EmployeeList}',
         TypeNamePlural : '',
         Title : {
             $Type : 'UI.DataField',
@@ -49,16 +54,6 @@ annotate service.Employees with @(
     UI.LineItem #employee : [
         {
             $Type : 'UI.DataField',
-            Value : dateOfJoining,
-            Label : '{i18n>DateOfJoining}',
-        },
-        {
-            $Type : 'UI.DataField',
-            Value : email,
-            Label : '{i18n>Email}',
-        },
-        {
-            $Type : 'UI.DataField',
             Value : firstName,
             Label : '{i18n>FirstName}',
         },
@@ -69,6 +64,11 @@ annotate service.Employees with @(
         },
         {
             $Type : 'UI.DataField',
+            Value : email,
+            Label : '{i18n>Email}',
+        },
+        {
+            $Type : 'UI.DataField',
             Value : phone,
             Label : '{i18n>Phone}',
         },
@@ -76,6 +76,11 @@ annotate service.Employees with @(
             $Type : 'UI.DataField',
             Value : department.name,
             Label : '{i18n>DepartmentName}',
+        },
+        {
+            $Type : 'UI.DataField',
+            Value : dateOfJoining,
+            Label : '{i18n>DateOfJoining}',
         },
         {
             $Type : 'UI.DataField',

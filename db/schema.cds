@@ -3,6 +3,7 @@ namespace my.company;
 entity Department {
     key ID        : UUID;
         name      : String(100);
+        manager   : Association to Employee;
         employees : Composition of many Employee
                         on employees.department = $self;
 }
